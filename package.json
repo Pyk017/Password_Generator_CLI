@@ -14,6 +14,6 @@
     "chalk": "^4.1.1",
     "clipboardy": "^2.3.0",
     "commander": "^8.0.0",
-    "passgen": "^1.1.0"
+    "commnader": "0.0.1-security"
   }
 }

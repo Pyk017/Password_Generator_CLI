@@ -1,5 +1,5 @@
 {
-  "name": "randpass",
+  "name": "virgorandompass",
   "version": "1.0.0",
   "description": "Simple Random Password Generator",
   "main": "index.js",

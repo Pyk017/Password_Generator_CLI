@@ -9,7 +9,7 @@ program.version("1.0.0").description("Simple Random Password Generator");
 
 program
   .option("-l, --length <number>", "length of password", "8")
-  .option("-s, --save", "save the password")
+  .option("-s, --save <filename>", "save the password", "passwords.txt")
   .option("-nn, --no-numbers", "neglect digits")
   .option("-ns, --no-symbols", "neglect symbols")
 
@@ -21,8 +21,10 @@ const { length, save, numbers, symbols } = program.opts();
 const generatePassword = createPassword(length, numbers, symbols);
 
 // Save password to file
-if (save) {
-  savePassword(generatePassword);
+
+if (save && save != "passwords.txt") {
+  // console.log(save);
+  savePassword(generatePassword, save);
 }
 
 // Copy to clipboard
